@@ -42,11 +42,10 @@ namespace OIB.Lab3
         {
             var password = "";
             var rnd = new Random();
-            var rndList = new Random();
 
             for (int i = 0; i < L; i++)
             {
-                var index = rndList.Next(0, chars.Count);
+                var index = rnd.Next(0, chars.Count);
                 password += (char)rnd.Next(chars[index].First(), chars[index].Last() + 1);
             }
             return password;
