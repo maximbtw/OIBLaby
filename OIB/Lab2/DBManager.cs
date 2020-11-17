@@ -1,5 +1,4 @@
-﻿using System.Windows.Forms;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 
 namespace OIB.Lab2
@@ -86,7 +85,7 @@ namespace OIB.Lab2
             }
             if (!password.All(x => char.IsLetter(x)))
             {
-                Helper.ErrorMessage("В пароле должный быть только буквы");
+                Helper.ErrorMessage("В пароле должны быть только буквы");
                 return false;
             }
             return true;

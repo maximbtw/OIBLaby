@@ -101,6 +101,13 @@
     </Compile>
     <Compile Include="Lab2\User.cs" />
     <Compile Include="Lab2\Profile.cs" />
+    <Compile Include="Lab3\FormLab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab3\FormLab3.Designer.cs">
+      <DependentUpon>FormLab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab3\PasswordProtection.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lab2\RegistrForm.resx">
       <DependentUpon>RegistrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab3\FormLab3.resx">
+      <DependentUpon>FormLab3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
