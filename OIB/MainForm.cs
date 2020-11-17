@@ -1,6 +1,5 @@
 ﻿using OIB.Lab2;
 using OIB.Lab3;
-using OIB.Lab4;
 using System;
 using System.Windows.Forms;
 
@@ -15,27 +14,25 @@ namespace OIB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Helper.NextForm(this, new Form1());
+            this.Hide();
+            new Form1().Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Helper.NextForm(this, new LoginForm());
+            this.Hide();
+            new LoginForm().Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Helper.NextForm(this, new FormLab3());
+            this.Hide();
+            new FormLab3().Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Helper.NextForm(this, new FormLab4());
         }
     }
 }
