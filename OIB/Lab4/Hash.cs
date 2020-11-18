@@ -13,7 +13,7 @@ namespace OIB.Lab4
 
         public static int KSumm(string password)
         {
-            var K = password.Sum(x => x);
+            var K = password.Sum();
             return (K <= maxVal) ? K % (maxVal + 1) : K;
         }
 
